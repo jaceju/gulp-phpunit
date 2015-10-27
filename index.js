@@ -232,10 +232,7 @@ module.exports = function(command, opt) {
 					cb(null, file);
 				}
 
-			}).stdout.on('data', function(data) {
-					 var str = data.toString();
-					cb(null, str);
-				});
+			});
 		}
 
 	});
